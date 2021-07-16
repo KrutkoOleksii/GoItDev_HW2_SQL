@@ -8,5 +8,5 @@ select
  inner join projects
  on developer_project.project_id = projects.project_id
  group by project_name
- ORDER BY amount_salary
+ ORDER BY amount_salary DESC
  LIMIT 1
