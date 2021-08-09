@@ -1,10 +1,9 @@
-select
-project_name,
-cost
-from  hw2.projects
-where cost = 
-(select
-min(cost) as cost
-from hw2.projects
-) 
-;
+SELECT
+ project_name,
+ cost
+FROM  hw2.projects
+WHERE cost = 
+ (SELECT
+  min(cost) AS cost
+  FROM hw2.projects
+ );
